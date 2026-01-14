@@ -131,6 +131,8 @@ This will automatically open the DApp in your web browser, typically at `http://
 ``` 
 .
 ├── build/                 # Compiled smart contract artifacts (.json files)
+│   └── contracts/
+│       └── MPMS.json
 ├── contracts/             # Solidity smart contract source code
 │   └── mpms.sol           
 ├── migrations/            # Truffle deployment scripts
@@ -143,7 +145,10 @@ This will automatically open the DApp in your web browser, typically at `http://
 │   |   └── MPMS_ABI.json // Contract ABI (auto-generated upon compilation)
 │   └── ...html            # HTML views (Admin.html, Reporter.html, Register.html)
 ├── package.json           # Node.js dependencies and scripts
-├── truffle-config.js      # Truffle configuration
+├── package-lock.json      # Locks all dependency versions (ensures consistent setup)
+├── truffle-config.js      # Truffle framework configuration
+├── bs-config.json         # BrowserSync/lite-server configuration
+├── .gitignore             # (Recommended: To exclude node_modules, build logs, etc.)
 └── README.md              # This file
 
 ```
