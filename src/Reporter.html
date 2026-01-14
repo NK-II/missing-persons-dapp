@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Reporter Panel - MPMS</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="js/web3-init.js"></script>
+  <script src="js/reporter.js" defer></script>
+</head>
+<body>
+  <h1>Reporter Dashboard</h1>
+
+  <!-- Add Missing Person -->
+  <h3>Report Missing Person</h3>
+  <form id="addMissingForm">
+    <input type="text" id="mpName" placeholder="Name" required />
+    <input type="number" id="mpAge" placeholder="Age" required />
+    <input type="number" id="mpHeight" placeholder="Height (cm)" required />
+    <input type="text" id="mpDesc" placeholder="Description" required />
+    <input type="text" id="mpDivision" placeholder="Division" required />
+    <input type="text" id="mpContact" placeholder="Contact Number" required />
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Book Appointment -->
+  <h3>Book Investigator Appointment</h3>
+  <form id="bookForm">
+    <input type="number" id="bookCaseId" placeholder="Case ID" required />
+    <input type="text" id="bookInvestigator" placeholder="Investigator Address" required />
+    <input type="text" id="bookAdmin" placeholder="Admin Address" required />
+    <input type="text" id="bookSlot" placeholder="HH:MM-HH:MM" required />
+    <button type="submit">Book</button>
+  </form>
+
+  <!-- View Appointments -->
+  <h3>View Investigator Schedule</h3>
+  <form id="scheduleForm">
+    <input type="text" id="scheduleAddress" placeholder="Investigator Address" required />
+    <button type="submit">View Schedule</button>
+  </form>
+  <div id="scheduleResult"></div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Investigator Panel - MPMS</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="js/web3-init.js"></script>
+  <script src="js/investigator.js" defer></script>
+</head>
+<body>
+  <h1>Investigator Dashboard</h1>
+
+  <!-- Report Found Person -->
+  <h3>Report Person Found</h3>
+  <form id="foundForm">
+    <input type="number" id="foundCaseId" placeholder="Case ID" required />
+    <input type="text" id="foundNote" placeholder="Note (e.g., location, context)" required />
+    <button type="submit">Notify Admin</button>
+  </form>
+
+  <!-- View My Schedule -->
+  <h3>My Appointment Schedule</h3>
+  <button id="loadScheduleBtn">Load Schedule</button>
+  <div id="mySchedule"></div>
+
+</body>
+</html>

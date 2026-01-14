@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel - MPMS</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="js/web3-init.js"></script>
+  <script src="js/admin.js" defer></script>
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+
+  <!-- Update Missing Person Status -->
+  <h3>Update Status</h3>
+  <form id="updateStatusForm">
+    <input type="number" id="caseId" placeholder="Case ID" required />
+    <select id="newStatus">
+      <option value="1">Found</option>
+    </select>
+    <button type="submit">Update</button>
+  </form>
+
+  <!-- Assign Investigator -->
+  <h3>Assign Investigator</h3>
+  <form id="assignInvestigatorForm">
+    <input type="number" id="assignCaseId" placeholder="Case ID" required />
+    <input type="text" id="investigatorAddress" placeholder="Investigator Address" required />
+    <button type="submit">Assign</button>
+  </form>
+
+  <!-- View Investigator Schedule -->
+  <h3>View Investigator Schedule</h3>
+  <form id="viewScheduleForm">
+    <input type="text" id="scheduleAddress" placeholder="Investigator Address" required />
+    <button type="submit">View Schedule</button>
+  </form>
+  <div id="scheduleResult"></div>
+
+  <!-- Review Found Alerts -->
+  <h3>Investigator Reports</h3>
+  <form id="reviewFoundForm">
+    <input type="number" id="foundCaseId" placeholder="Case ID" required />
+    <button type="submit">Mark Reviewed</button>
+  </form>
+  <div id="foundAlertMsg"></div>
+
+</body>
+</html>
