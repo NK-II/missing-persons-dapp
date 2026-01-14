@@ -1,0 +1,6 @@
+# Normalize line endings
+* text=auto eol=lf
+
+# Solidity files
+*.sol linguist-language=Solidity
+*.sol text eol=lf
