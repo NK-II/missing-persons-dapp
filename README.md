@@ -49,7 +49,7 @@ Follow these steps to deploy the smart contract and run the DApp locally.
 ### 1\. Clone the Repository
 
 ``` bash
-git clone [YOUR_REPO_URL]
+git clone https://github.com/NK-II/missing-persons-dapp.git
 cd MPMS-DApp
 
 ```
@@ -137,7 +137,6 @@ This will automatically open the DApp in your web browser, typically at `http://
 │   └── mpms.sol           
 ├── migrations/            # Truffle deployment scripts
 │   └── 2_deploy_contracts.js 
-├── node_modules/          # Project dependencies
 ├── src/                   # Front-end source code
 │   ├── css/               # Stylesheets (bootstrap)
 │   ├── js/                # JavaScript logic (admin.js, reporter.js, web3-init.js, etc.)
@@ -149,6 +148,7 @@ This will automatically open the DApp in your web browser, typically at `http://
 ├── truffle-config.js      # Truffle framework configuration
 ├── bs-config.json         # BrowserSync/lite-server configuration
 ├── .gitignore             # (Recommended: To exclude node_modules, build logs, etc.)
+├── .gitattributes
 └── README.md              # This file
 
 ```
